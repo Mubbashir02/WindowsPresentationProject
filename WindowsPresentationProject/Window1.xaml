@@ -1,0 +1,22 @@
+﻿<Window x:Class="WindowsPresentationProject.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="HANGMAN" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="50"></TextBlock>
+        <ComboBox VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Name="categories">
+            <ComboBoxItem>GAMES</ComboBoxItem>
+            <ComboBoxItem>COUNTRIES</ComboBoxItem>
+        </ComboBox>
+        <Button Grid.Row="2" Height="40" Width="100" Click="Button_Click">
+            Next
+        </Button>
+        
+    
+    </Grid>
+</Window>
